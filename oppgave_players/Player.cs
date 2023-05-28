@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace oppgave_players
+﻿namespace oppgave_players
 {
     internal class Player
     {
@@ -33,16 +31,6 @@ namespace oppgave_players
         {
             Console.WriteLine($"Name: {player.Name}\nPoints: {player.Points}");
             Console.WriteLine();
-        }
-
-        public string GetMatchInfo(Player opponent)
-        {
-            //string result = $"{Name} Vs. {opponent.Name}: {Points} -  {opponent.Points}";
-            //return result;
-
-            int scoreDifference = Points - opponent.Points;
-            string result = $"{Name} vs. {opponent.Name}: Score difference: {scoreDifference}";
-            return result;
         }
     }
 }

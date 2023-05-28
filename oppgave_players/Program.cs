@@ -17,16 +17,6 @@ for (var round = 1; round <= 10; round++)
     player1.Play(player2);
 }
 
-for (int i = 0; i < players.Length; i++)
-{
-    for (int j = 0; j < players.Length; j++)
-    {
-        string matchInfo = players[i].GetMatchInfo(players[j]);
-        Console.WriteLine(matchInfo);
-    }
-}
-
-Console.WriteLine();
 foreach (var player in players)
 {
     Player.ShowNameAndPoints(player);
